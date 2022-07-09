@@ -1,0 +1,24 @@
+/** Import all css sheets */
+@import url(./FormComponent/index.css);
+@import url(./ButtonComponents/index.css);
+@import url(./TextComponents/index.css);
+@import url(./TagComponent/index.css);
+@import url(./ContainerComponents/index.css);
+@import url(./utilCssClasses/index.css);
+@import url(./NavigationComponents/index.css);
+
+::-webkit-scrollbar {
+  width: 12px;
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8a9bb2;
+  border-radius: 12px;
+  border: 2px solid #e5edef;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,38 @@
+/** Popup styles */
+.container-components-main-container-popup {
+  height: 100vh;
+  position: fixed;
+}
+
+.container-components-background-popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 999;
+}
+
+.container-components-container-body-popup {
+  border-radius: 6px;
+  padding: 1rem;
+  background-color: white;
+  position: fixed;
+  z-index: 1000;
+  overflow-y: scroll;
+}
+
+.container-components-close-icon-popup {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 1.5rem;
+  color: gray;
+}
+
+.container-components-close-icon-popup:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}

@@ -1,9 +1,13 @@
+/** Implement Escarac Coleopteros Styles */
+@import url(../coleopteros/index.css);
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #f0f2f5;
 }
 
 a {
@@ -13,4 +17,15 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #152288;
+  --primary-color-deg: #B3B9E3;
+  
+  --accents-1: #fafafa;
+  --accents-2:  #f2f2f2;
+  --accents-3: #eaeaea;
+  --accents-4: #999;
+  --accents-5: #888; 
 }

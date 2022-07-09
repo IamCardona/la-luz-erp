@@ -1,0 +1,8 @@
+/** Title component */
+.text-components-title {
+  color: var(--primary-color);
+}
+
+.primary-text {
+  color: var(--primary-color);
+}
