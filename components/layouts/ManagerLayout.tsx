@@ -6,9 +6,9 @@ import FullNavigationComponent from "../../coleopteros/NavigationComponents/Full
 import FooterEscarac from '../../coleopteros/UtilComponents/FooterEscarac';
 
 // Import icons
-import { SiAuth0 } from 'react-icons/si'
+import { FaBoxOpen } from 'react-icons/fa'
 
-export default function UnauthenticatedLayout(Layout: Layout) {
+export default function ManagerLayout(Layout: Layout) {
   return (
     <>
       <Head>
@@ -21,22 +21,22 @@ export default function UnauthenticatedLayout(Layout: Layout) {
         <meta name="author" content="escarac.com" />
       </Head>
       <FullNavigationComponent appName="La Luz ERP" sidebarNavigation={[
-        // Dynamic Link
+        // Inicio
         {
           dymamicLinks: [
-            {href: "/", title: "Inicio"}
+            {href: "/dashboard", title: "Inicio"}
           ],
           child: false
         },
-        // Sidebar title
+        // Providers title
         {
-          icon: <SiAuth0 />, text: "Identificate"
+          icon: <FaBoxOpen />, text: "Provedores"
         },
         // Dynamic Link
         {
           dymamicLinks: [
-            {href: "/login", title: "Iniciar sesión"},
-            {href: "/forgot-password", title: "Recuperar contraseña"}
+            {href: "/dashboard/providers#list", title: "Lista de provedores"},
+            {href: "/dashboard/providers#add", title: "Agregar provedor"},
           ],
           child: true
         },

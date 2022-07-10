@@ -3,6 +3,20 @@
   color: var(--primary-color);
 }
 
+.text-components-text-primary-1 {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.text-components-text-primary-2 {
+  color: var(--accents-5);
+  font-weight: bold;
+}
+
 .primary-text {
+  color: var(--primary-color);
+}
+
+.text-components-subtitle-primary {
   color: var(--primary-color);
 }

@@ -50,7 +50,11 @@ export default function FullNavigationComponent(FullNavigation: FullNavigation) 
                   paddingLeft: item.child && "1rem"
                 }}>
                   {item.dymamicLinks.map((link, i) => {
-                    return <DynamicLinkComponent key={i} href={link.href} asPath={router.asPath} title={link.title} />
+                    return (
+                      <div onClick={() => setSideBar(!sideBar)}>
+                        <DynamicLinkComponent key={i} href={link.href} asPath={router.asPath} title={link.title} />
+                      </div>
+                    )
                   })}
                 </div>
               )

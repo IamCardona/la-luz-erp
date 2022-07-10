@@ -1,1 +1,8 @@
 @import url(./Popup/index.css);
+
+.card-container-main-container {
+  box-shadow: rgb(4 9 20 / 3%) 0px 0.46875rem 2.1875rem, rgb(4 9 20 / 3%) 0px 0.9375rem 1.40625rem, rgb(4 9 20 / 5%) 0px 0.25rem 0.53125rem, rgb(4 9 20 / 3%) 0px 0.125rem 0.1875rem;
+  background-color: white;
+  border-radius: 6px;
+  overflow: scroll;
+}

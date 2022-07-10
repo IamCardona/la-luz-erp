@@ -1,4 +1,4 @@
-import { Text } from './types'
+import type { Text } from './types'
 
 export default function TitleComponent(Text: Text) {
   return(

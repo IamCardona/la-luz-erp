@@ -4,11 +4,11 @@
   position: fixed;
   width: 100%;
   padding: 1rem;
-  z-index: 2;
+  z-index: 1000;
 }
 
 .full-navigation-component-icon {
-  font-size: 24px;
+  font-size: 28px;
   color: var(--primary-color);
 }
 
@@ -35,7 +35,7 @@
   left: 0;
   top: calc(2rem + 24px);
   bottom: 0;
-  z-index: 1;
+  z-index: 999;
   user-select: none;
 }
 
@@ -49,6 +49,7 @@
   padding: 0.5rem;
   width: 100%;
   border-radius: 4px;
+  transition: 0.3s;
 }
 
 .full-navigation-component-menu-link:hover {

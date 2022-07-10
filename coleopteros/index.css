@@ -6,6 +6,7 @@
 @import url(./ContainerComponents/index.css);
 @import url(./utilCssClasses/index.css);
 @import url(./NavigationComponents/index.css);
+@import url(./UtilComponents/index.css);
 
 ::-webkit-scrollbar {
   width: 12px;
@@ -18,7 +19,7 @@
   border: 2px solid #e5edef;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
 }

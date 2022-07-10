@@ -19,7 +19,7 @@ interface Row {
 }
 
 interface Field {
-  type: "text" | "number" | "textarea" | "option",
+  type: "text" | "number" | "textarea" | "option" | "password",
   name: string,
   label: string,
   required: boolean,

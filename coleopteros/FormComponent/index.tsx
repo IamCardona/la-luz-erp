@@ -47,6 +47,7 @@ export default function FormComponent(Form: Form) {
                 justifyContent: element.aling,
               }}>
                 {element.fields.map((field, i) => {
+                  if(field.type === "password") return <TextFieldComponent key={i} field={field} state={values} setState={setValues} itemsNum={element.fields && element.fields.length} />
                   if(field.type === "text") return <TextFieldComponent key={i} field={field} state={values} setState={setValues} itemsNum={element.fields && element.fields.length} />
                   if(field.type === "number") return <NumberFieldComponent key={i} field={field} state={values} setState={setValues} itemsNum={element.fields && element.fields.length} />
                   if(field.type === "textarea") return <TextAreaFieldComponent key={i} field={field} state={values} setState={setValues} itemsNum={element.fields && element.fields.length} />

@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 
 export interface Layout {
-  children: ReactNode
+  children: ReactNode,
+  title: string
 }
