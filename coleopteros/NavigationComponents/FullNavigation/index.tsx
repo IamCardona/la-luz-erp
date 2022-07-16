@@ -51,8 +51,8 @@ export default function FullNavigationComponent(FullNavigation: FullNavigation) 
                 }}>
                   {item.dymamicLinks.map((link, i) => {
                     return (
-                      <div onClick={() => setSideBar(!sideBar)}>
-                        <DynamicLinkComponent key={i} href={link.href} asPath={router.asPath} title={link.title} />
+                      <div key={i} onClick={() => setSideBar(!sideBar)}>
+                        <DynamicLinkComponent href={link.href} asPath={router.asPath} title={link.title} />
                       </div>
                     )
                   })}

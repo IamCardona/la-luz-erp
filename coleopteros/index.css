@@ -7,6 +7,7 @@
 @import url(./utilCssClasses/index.css);
 @import url(./NavigationComponents/index.css);
 @import url(./UtilComponents/index.css);
+@import url(./TableComponents/index.css);
 
 ::-webkit-scrollbar {
   width: 12px;

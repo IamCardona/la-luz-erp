@@ -1,4 +1,5 @@
 import { useAuthUser, withAuthUser, AuthAction } from 'next-firebase-auth'
+import { useState } from 'react'
 import Loader from '../../../coleopteros/UtilComponents/Loader'
 
 // Import layouts
@@ -10,12 +11,13 @@ import Providers from '../../../components/providers'
 import HashNavigationContainerComponent from '../../../coleopteros/NavigationComponents/HashNavigationContainer'
 
 const ProvidersView = () => {
+  const [state, setState] = useState({})
   const AuthUser = useAuthUser()
 
   if(AuthUser.claims.manager) return(
     <ManagerLayout title={`Dashboard - ${AuthUser.displayName}`}>
       <HashNavigationContainerComponent components={[
-        {route: "#list", component: <Providers authUser={AuthUser} />}
+        {route: "#list", component: <Providers authUser={AuthUser} state={state} setState={setState} />}
       ]} />
     </ManagerLayout>
   )

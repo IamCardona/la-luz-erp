@@ -37,6 +37,14 @@
   bottom: 0;
   z-index: 999;
   user-select: none;
+
+  overflow-x: scroll;
+  padding-bottom: 3rem;
+}
+
+.full-navigation-container-sidebar::-webkit-scrollbar {
+  width: 10px;
+  -webkit-appearance: none;
 }
 
 .full-navigation-component-menu-link {

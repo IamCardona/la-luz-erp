@@ -6,7 +6,8 @@ import FullNavigationComponent from "../../coleopteros/NavigationComponents/Full
 import FooterEscarac from '../../coleopteros/UtilComponents/FooterEscarac';
 
 // Import icons
-import { FaBoxOpen } from 'react-icons/fa'
+import { FaBoxOpen, FaTools } from 'react-icons/fa'
+import { GiPapers } from 'react-icons/gi'
 
 export default function ManagerLayout(Layout: Layout) {
   return (
@@ -40,6 +41,29 @@ export default function ManagerLayout(Layout: Layout) {
           ],
           child: true
         },
+        // Providers title
+        {
+          icon: <GiPapers />, text: "Cotizaciones"
+        },
+        {
+          dymamicLinks: [
+            {href: "/dashboard/quotes#list", title: "Lista de cotizaciones"},
+            {href: "/dashboard/quotes#add", title: "Agregar cotización"},
+          ],
+          child: true
+        },
+        // Providers title
+        {
+          icon: <FaTools />, text: "Trabajos"
+        },
+        {
+          dymamicLinks: [
+            {href: "/dashboard/works#list", title: "Lista de trabajos"},
+            {href: "/dashboard/works#add", title: "Trabajos que adeudan"},
+            {href: "/dashboard/works#add", title: "Trabajos sin entregar"},
+          ],
+          child: true
+        }
       ]}>
         <div style={{minHeight: "calc(100vh - (2rem + 32px))"}}>
           {Layout.children}
