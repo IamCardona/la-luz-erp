@@ -1,10 +1,12 @@
 import { ReactNode } from "react"
 
 export interface HashNavigationContainer {
-  components: [{
+  components: ({
     route: string,
     component: ReactNode
-  }]
+  })[],
+  loading: boolean,
+  error404: ReactNode
 }
 
 export interface FullNavigation {
@@ -15,7 +17,6 @@ export interface FullNavigation {
   } | MenuSection)[],
   children: ReactNode
 }
-
 
 export interface MenuSection {
   icon: ReactNode,

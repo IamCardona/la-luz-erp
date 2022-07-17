@@ -10,6 +10,7 @@
 .full-navigation-component-icon {
   font-size: 28px;
   color: var(--primary-color);
+  display: block;
 }
 
 .full-navigation-component-icon:hover {

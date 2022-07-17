@@ -8,6 +8,8 @@
 @import url(./NavigationComponents/index.css);
 @import url(./UtilComponents/index.css);
 @import url(./TableComponents/index.css);
+@import url(./NotificationsComponents/);
+@import url(./OrnamentComponents/index.css);
 
 ::-webkit-scrollbar {
   width: 12px;

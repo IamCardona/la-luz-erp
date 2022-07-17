@@ -9,6 +9,7 @@ export default function PrimaryButtonComponent(Button: Button) {
         width: Button.width,
         height: Button.height
       }}
+      onClick={Button.action ? Button.action : () => null}
     >
       {Button.text}
     </button>
