@@ -18,8 +18,7 @@ const CrystalProvider = new mongoose.Schema({
   provider: {
     required: true,
     type: String,
-    default: "Crystal",
-    unique: true
+    default: "CRISTAL"
   },
   crystal: {
     "3mm": crystals,

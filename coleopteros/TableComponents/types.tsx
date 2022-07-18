@@ -6,6 +6,5 @@ export interface ViewTable {
   data: any[],
   headings: string[],
   refs: string[],
-  href: string,
-  hrefIds: string[]
+  href: (value: string) => string
 }

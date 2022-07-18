@@ -39,9 +39,8 @@ export default function ProvidersComponent(Providers: Providers) {
             icon={<FaTools />}
             data={Providers.state.providers}
             headings={["Identificador", "Nombre", "Ramo"]}
-            refs={["_id", "name", "bouquet"]}
-            href="#get"
-            hrefIds={["_id"]} />
+            refs={["_id", "name", "provider"]}
+            href={(provider) => `?_id=${provider._id}#get`} />
         </div>
       </div>
     </>

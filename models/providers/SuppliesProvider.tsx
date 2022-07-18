@@ -11,8 +11,7 @@ const SuppliesProvider = new mongoose.Schema({
   provider: {
     required: true,
     type: String,
-    default: "Supplies",
-    unique: true
+    default: "SUMINISTROS"
   },
   supplies: {
     felpa: price,

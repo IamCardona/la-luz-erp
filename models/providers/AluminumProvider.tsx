@@ -32,8 +32,7 @@ const AluminumProvider = new mongoose.Schema({
   provider: {
     required: true,
     type: String,
-    default: "Aluminum",
-    unique: true
+    default: "ALUMINIO"
   },
   profiles: {
     national: {

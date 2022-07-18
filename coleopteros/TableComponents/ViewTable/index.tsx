@@ -62,11 +62,7 @@ export default function ViewTableComponent(ViewTable: ViewTable) {
           {pagination.length > 0 && pagination[pageIndex].map((register, i) => {
             return(
               <tr key={i} onDoubleClick={() => {
-                let urlPath = ""
-                ViewTable.hrefIds.forEach(id => {
-                  urlPath = urlPath + register[id] +  "/"
-                })
-                router.push(`${ViewTable.href}/${urlPath}`)
+                router.push(ViewTable.href(register))
               }}>
                 {ViewTable.refs.map((ref, i) => {
                   return(
