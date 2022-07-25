@@ -32,7 +32,7 @@ export default function ViewTableComponent(ViewTable: ViewTable) {
       <h2 className="view-table-title">{ViewTable.icon} {ViewTable.title}</h2>
 
       {/** Search form */}
-      <form className="view-table-form">
+      <form className="view-table-form" onSubmit={e => e.preventDefault()}>
         <input
           className="form-component-generic-styles-for-inputs"
           autoComplete="off"

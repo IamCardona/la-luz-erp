@@ -8,5 +8,6 @@ export interface Button {
   width?: string | number,
   height?: string| number,
   icon?: ReactNode,
-  iconPosition?: "left" | "right"
+  iconPosition?: "left" | "right",
+  color?: string
 }

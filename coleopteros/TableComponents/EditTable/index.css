@@ -1,0 +1,42 @@
+/** Table styles */
+.edit-table-table {
+  border: 1px solid #e9ecef;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  user-select: none;
+  margin: 2rem 0;
+}
+
+.edit-table-table > thead > tr > th,
+.edit-table-table > tbody > tr > td,
+.edit-table-table > tbody > tr > th {
+  border: 1px solid rgba(0,0,0,0.03);
+  text-align: left;
+  padding: 8px;
+  color: rgba(13, 27, 62, 0.7);
+  font-size: 14px;
+}
+
+.edit-table-table > thead > tr > th,
+.edit-table-table > tbody > tr > td {
+  text-align: center;
+}
+
+.edit-table-table > tbody > tr > td:hover {
+  cursor: pointer;
+  background-color: var(--primary-color-deg) !important;
+}
+
+.edit-table-table > th {
+  font-weight: bold;
+}
+
+.edit-table-table > tbody > tr {
+  background-color: white;
+}
+
+.edit-table-table > tbody > tr:nth-child(even) {
+  background-color: rgba(0,0,0,0.03);
+}

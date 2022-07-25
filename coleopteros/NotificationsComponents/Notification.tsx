@@ -12,6 +12,7 @@ export default function NotificationComponent(Notification: Notification) {
     setTimeout(() => {
       setTop("-250px");
       setTimeout(() => {
+        console.log(Notification)
         Notification.notification.setStatus(null);
       }, 1000);
     }, 5000);

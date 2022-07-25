@@ -28,7 +28,8 @@
 }
 
 .view-table-table > thead > tr > th,
-.view-table-table > tbody > tr > td {
+.view-table-table > tbody > tr > td,
+.view-table-table > tbody > tr > th {
   border: 1px solid rgba(0,0,0,0.03);
   text-align: left;
   padding: 8px;

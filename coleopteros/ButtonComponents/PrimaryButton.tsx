@@ -11,7 +11,12 @@ export default function PrimaryButtonComponent(Button: Button) {
       }
       style={{
         width: Button.width,
-        height: Button.height
+        height: Button.height,
+        backgroundColor: Button.color,
+        color: Button.color && "white",
+        borderColor: Button.color,
+        display: Button.icon ? "flex" : "",
+        alignItems: Button.icon ? "center" : "",
       }}
       onClick={Button.action ? Button.action : () => null}
     >
